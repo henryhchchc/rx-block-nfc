@@ -1,6 +1,8 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v2">
   <prescription pacakge="com.tencent.mobileqq" type="activity">
     <intent-filter>
+      <action name="android.nfc.action.NDEF_DISCOVERED"/>
+      <action name="android.nfc.action.TECH_DISCOVERED"/>
       <action name="android.nfc.action.TAG_DISCOVERED"/>
     </intent-filter>
   </prescription>
