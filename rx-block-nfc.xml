@@ -2,12 +2,22 @@
   <!-- QQ -->
   <prescription package="com.tencent.mobileqq" type="activity">
     <intent-filter>
-      <action name="android.nfc.action.NDEF_DISCOVERED"/>
       <action name="android.nfc.action.TECH_DISCOVERED"/>
-      <action name="android.nfc.action.TAG_DISCOVERED"/>
     </intent-filter>
   </prescription>
   <prescription package="com.tencent.mobileqq" class="cooperation.hce.HceService" type="service">
+    <intent-filter>
+      <action name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+    </intent-filter>
+  </prescription>
+  
+  <!-- WeChat -->
+  <prescription package="com.tencent.mm" type="activity">
+    <intent-filter>
+      <action name="android.nfc.action.TECH_DISCOVERED"/>
+    </intent-filter>
+  </prescription>
+  <prescription package="com.tencent.mm" class="com.tencent.mm.plugin.appbrand.jsapi.nfc.hce.HCEService" type="service">
     <intent-filter>
       <action name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
     </intent-filter>
