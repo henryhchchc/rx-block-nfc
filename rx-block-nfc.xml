@@ -1,4 +1,4 @@
-<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v2" type="service">
+<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v2">
   <prescription pacakge="com.tencent.mobileqq">
     <intent-filter>
       <action name="android.nfc.action.TAG_DISCOVERED"/>
