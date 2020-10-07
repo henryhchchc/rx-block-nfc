@@ -1,5 +1,15 @@
 <prescriptions xmlns="http://greenify.github.io/schemas/prescription/v2">
+  <!-- QQ -->
   <prescription package="com.tencent.mobileqq" type="activity">
+    <intent-filter>
+      <action name="android.nfc.action.NDEF_DISCOVERED"/>
+      <action name="android.nfc.action.TECH_DISCOVERED"/>
+      <action name="android.nfc.action.TAG_DISCOVERED"/>
+    </intent-filter>
+  </prescription>
+  
+  <!-- China Counctruction Bank -->
+  <prescription package="com.chinamworld.main" type="activity">
     <intent-filter>
       <action name="android.nfc.action.NDEF_DISCOVERED"/>
       <action name="android.nfc.action.TECH_DISCOVERED"/>
