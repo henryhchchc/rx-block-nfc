@@ -7,6 +7,11 @@
       <action name="android.nfc.action.TAG_DISCOVERED"/>
     </intent-filter>
   </prescription>
+  <prescription package="com.tencent.mobileqq" type="service">
+    <intent-filter>
+      <action name="android.nfc.cardemulation.action.HOST_APDU_SERVICE"/>
+    </intent-filter>
+  </prescription>
   
   <!-- China Counctruction Bank -->
   <prescription package="com.chinamworld.main" type="activity">
